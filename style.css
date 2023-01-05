@@ -1,0 +1,650 @@
+* {
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+.comunidad {
+    background-color: #FFF2DC;
+}
+
+body {
+    margin: 0;
+    background-color: #E0F8F7;
+}
+
+
+#rootC {
+    background-color: #F5DEC7;
+
+}
+
+.header .logo img {
+    top: 20px;
+    height: 3rem;
+    cursor: pointer;
+}
+
+
+.heading {
+    text-align: center;
+    color: #07ACDC;
+    text-transform: uppercase;
+    font-size: 2rem;
+
+}
+
+.headingI{
+    font-size: 1.5rem;
+    color: #1B798F;
+    padding-left: 5em;
+}
+
+.headingC {
+    text-align: center;
+    color: #756244;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.heading-c{
+    font-size: 1.5rem;
+    color: #1B798F;
+}
+
+.heading span {
+    color: #1B798F;
+}
+
+.headingC span{
+    color: #D0A158;
+}
+.nav {
+    display: block;
+}
+
+.header .navbar a {
+    color: #000;
+    font-size: 1.6rem;
+    margin: 0 1rem;
+    text-decoration: none;    
+}
+
+.header .navbar a:hover {
+    color: #07ACDC;
+}
+
+.header .icons div {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .headerI {
+    font-size: 2rem;
+}
+.fa .fas {
+    font-weight: 900;
+}
+
+.fas {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fas {
+    -webkit-font-smoothing-: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.Usericon{
+    display: none;
+}
+
+.fa-user:before{
+    content: "\f007";
+}
+
+
+.cart-item img {
+    height: 3rem;
+    position: static;
+    top: 0.5rem;
+    display: flex;
+}
+
+
+.login-form .close-btn {
+    font-size: 3rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    background: #fff;
+    text-align: center;
+    line-height: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.login-form {
+    align-items: center;
+    background: rgba(240,240,240,0.8);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: -120%;
+    width: 100%;
+    z-index: 1000;
+}
+
+.login-form form {
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.3rem #333;
+    margin: 0.2rem;
+    padding: 1rem 3rem;
+    position: relative;
+    width: 35rem;
+}
+
+.login-form.popup  {
+    top: 0;
+}
+
+
+.login-form form.box{
+    background-color:#efefef;
+    border-bottom: 0.2rem solid #333;
+    color: #000;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    text-transform: none;
+    width: 100%;
+    display: block;
+
+}
+
+form {
+    display: block;
+}
+
+.login-form h3 {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.btn-lg {
+
+    background: #efefef;
+    color: #000;
+    cursor: pointer;
+    border-radius: 2rem;
+    margin-left: 35%;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.9rem 3rem;
+    font-weight: 1000;
+}
+
+
+
+.login-form p {
+    margin-left: 7rem;
+    color: white;
+}
+
+
+.navbar {
+   /*  border: 1px black solid; */
+    text-align: center;
+    width: 60rem;
+    margin: 0 auto;
+    /* border-style: solid;
+    border-color: aliceblue;
+    border-radius: 5px; */
+}
+
+/* #07ACDC */
+
+.box {
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 0.9rem 3rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0.5;
+
+}
+
+.btn {
+    background: #1B798F;
+    color: #efefef;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.7rem;
+    padding: 0.9rem 3rem;
+}
+
+.dropbtn {
+    background-color: #1B798F;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #343044;
+}
+
+.dropbtnC {
+    background-color: #756244;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.dropbtn1:hover, .dropbtn1:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown1 a:hover {
+    background-color: #ddd;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.contentP {
+    padding: 0rem 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.content {
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 2px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    width: 44rem;
+    
+}
+
+.formPP1 .h3 {
+    padding-left: 3rem;
+}
+
+
+.contentI {
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 2px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    text-align: left;
+    width: 44rem;
+    gap: 3rem;
+    margin-top: 1.5em;
+}
+
+
+
+.homero {
+    align-items: center;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    text-align: center;
+    width: 40rem;
+}
+.homero p {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 10px;
+    background-color:#efefef;
+    position: static;
+    top: 1px;
+    width: 100%;
+
+}
+
+
+.home {
+    transition: box-shadow 0.3s ease;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0rem;
+    background: url(images/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home:hover {box-shadow: 0 0.1rem 0.4rem #07ACDC   
+}
+
+.home .homero h3 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.homeC {
+    transition: box-shadow 0.3s ease;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0rem;
+    background: url(images/comunidad.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homeC:hover {box-shadow: 0 0.1rem 0.4rem #756244  
+}
+
+.homeC .homero h3 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.homeC p {
+    color: white;
+}
+
+.row {
+    align-items: center;
+
+}
+
+.documentgen {
+    font-size: 1rem;
+    font-weight: bold;
+    float: right;
+    margin-top: 7em;
+    margin-right: 15em;
+    padding: 1em;
+    cursor: pointer;
+}
+
+#ipp {
+    height: 20rem;
+    margin: 10px;
+    padding: 10px;
+}
+
+#imv {
+    height: 18rem;
+    margin: 10px;
+    padding: 10px;
+}
+
+.PracticasPreProfesionales .row {
+    display: flex;
+    align-items: center;
+}
+
+.ProyectosdeVinculacion .row {
+    display: flex;
+    align-items: center;
+}
+
+.ProyectosdeVinculacionC .row {
+    display: flex;
+    align-items: center;
+}
+
+.botonesV3 {
+    margin-top: 1em;
+    margin-left: 27em;
+}
+
+.InformeV3 {
+    transition: box-shadow 0.3s ease;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0rem;
+    align-items: center;
+    width: 80rem;
+    height: 40rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: none;
+}
+
+.InformeV3:hover {
+    box-shadow: 0 0.1rem 0.4rem #07ACDC
+}
+
+.elegido {
+    display: block;
+}
+
+.Informe {
+    transition: box-shadow 0.3s ease;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0rem;
+    align-items: center;
+    width: 80rem;
+    height: 45rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.Informe:hover {
+    box-shadow: 0 0.1rem 0.4rem #07ACDC
+}
+
+.PracticasPreProfesionales {
+    transition: box-shadow 0.3s ease;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0rem;
+    align-items: center;
+    width: 80rem;
+    height: 40rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.PracticasPreProfesionales:hover {
+    box-shadow: 0 0.1rem 0.4rem #07ACDC
+    
+}
+
+.PracticasPreProfesionales .cart-item {
+    align-items: center;
+    display: flex;
+    gap: 0.3rem;
+    position: static;
+    margin: 1rem;
+}
+
+
+.project-btn {
+    padding: 0rem 1rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.addproyecto {
+    margin-left: 2rem;
+    padding: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.addproyectoPP {
+    float: right;
+    margin-right: 3.7rem;
+    padding: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.ProyectosdeVinculacion {
+    transition: box-shadow 0.3s ease;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0rem;
+}
+
+.ProyectosdeVinculacion:hover {
+    box-shadow: 0 0.1rem 0.4rem #07ACDC
+    
+}
+
+.ProyectosdeVinculacion .cart-item {
+    align-items: center;
+    display: flex;
+    gap: 0.3rem;
+    position: static;
+    margin: 1rem;
+}
+
+.ProyectosdeVinculacionC {
+    transition: box-shadow 0.3s ease;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0rem;
+    background-color: #FFF2DC;
+}
+
+.ProyectosdeVinculacionC:hover {
+    box-shadow: 0 0.1rem 0.4rem #756244
+    
+}
+
+.ProyectosdeVinculacionC .cart-item {
+    align-items: center;
+    display: flex;
+    gap: 1.5rem;
+    position: static;
+    margin: 1rem;
+}
+
+#home {
+    padding: 250px 0;
+    width: 80rem;
+    height: 44rem;
+    margin: 0 auto;
+}
+
+
+#ProyectosdeVinculacion {
+    align-items: center;
+    width: 80rem;
+    height: 40rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+.lo-btn {
+    background: #E0F8F7;
+}
+section {
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+.footer {
+    background-color: #222;
+    padding: 3rem;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .logo img {
+    padding-top: 20px;
+    height: 5rem;
+    cursor: pointer;
+}
+
+#logout {
+    float: right;
+    height: 4rem;
+}

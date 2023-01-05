@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Informe Tipo 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Raleway:wght@300;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="root">
+        <div class="app">
+            <div>
+                <header class="header" id="header">
+                    <a href="#home" class="logo">
+                        <img src="images/logo.png" alt="" id="logo">
+                    </a>
+                    <nav class="navbar">
+                        <h1 class="headerI">Crear Informe Tipo V <br> Practicas PreProfesionales</h1>
+                    </nav>
+                </header>
+            </div>
+
+            <section class="Informe">
+                <h1 class="heading" id="heading-PPP">
+                    <span>Inserta la Información</span> Solicitada
+                </h1>
+                
+                <div class="contentI">
+                    <form action="">
+                        <h3>Información General</h3>
+                            <h5>Estudiante Participante</h5>
+                                <div>
+                                <label for="nombre_estudiante">Nombre</label>
+                                <input type="text" id="nombre_estudiante" name="nombre_estudiante">
+                                </div>
+                                <br>
+                                <div>
+                                <label for="cedula">Cédula:</label>
+                                <input type="text" id="cedula" name="cedula">
+                                
+                                <label for="semestre">Semestre:</label>
+                                <input type="text" id="semestre" name="semestre">
+                                </div>
+                                <br>
+                                <div>
+                                <label for="carrera">Carrera:</label>
+                                <input type="text" id="carrera" name="carrera">
+                                    
+                                <label for="escuela">Escuela:</label>
+                                <input type="text" id="escuela" name="escuela">
+                                </div>
+                            <h5>Profesor Tutor</h5>
+                                
+                                <div>
+                                <label for="nombreTutor">Nombre tutor:</label>
+                                <input type="text" id="nombreTutor" name="nombreTutor">
+                                
+                                <label for="cedulaTutor">Cédula tutor:</label>
+                                <input type="text" id="cedulaTutor" name="cedulaTutor">
+                                </div>
+                            
+                            <h5>Comunidad Beneficiaria</h5>
+
+                            <div>
+                                <label for="caracteristicasC">Caracteristicas de la comunidad/Entidad Benenficiaria:</label>
+                                <input type="text" id="caracteristicasC" name="caracteristicasC">
+                                <br>
+                                <label for="numeroBen">Semestre:</label>
+                                <input type="text" id="numeroBen" name="numeroBen">
+                            </div>
+
+                            <h5>Representante de la Comunidad</h5>
+
+                            <div>
+                                <label for="nombreRC">Caracteristicas de la comunidad/Entidad Benenficiaria:</label>
+                                <input type="text" id="nombreRC" name="nombreRC">
+                                <br>
+                                <label for="numeroBen">Semestre:</label>
+                                <input type="text" id="numeroBen" name="numeroBen">
+                            </div>
+
+
+                    </form>
+                </div>
+
+                <div class="botonesV3">
+                    <a href="#InformeV31"> 
+                        <button onclick="buttonV31()" class="dropbtn" id="informeV31">Informe V3.1</button> 
+                    </a>
+
+                    <a href="#InformeV32">
+                        <button onclick="buttonV32()" class="dropbtn" id="informeV32">Informe V3.2</button>
+                    </a>
+                    
+                    <a href="#InformeV33">
+                        <button onclick="buttonV33()" class="dropbtn" id="informeV33">Informe V3.3</button>
+                    </a>
+                </div>
+            </section>
+
+            <section class="InformeV3" id="InformeV31">
+                <h1 class="heading">Llena la Información requerida <span>Informe V 3.1</span></h1>
+                
+                <div class="contentI">
+                    <div class="formPP1">
+                        <form>
+                            <h3>Periodo que cubre el presente informe</h3>
+
+                                <div>
+                                <label for="fecha_de_inicio">Fecha de inicio</label>
+                                <input type="date" id="fecha_de_inicio" name="fecha_de_inicio">
+                                
+                                <label for="fecha_de_fin">Fecha de inicio</label>
+                                <input type="date" id="fecha_de_fin" name="fecha_de_fin">
+                                
+                                </div>
+                                <br>    
+                        </form>
+                    </div>
+                </div>                
+
+                <div class="contentI">
+                    <form action="">
+                        <h3>Actividades Desarrolladas</h3>
+                                <div>
+                                <label for="fecha_de_actividad">Fecha de Actividad</label>
+                                <input type="text" id="fecha_de_inicio" name="fecha_de_inicio" placeholder="0X - 0X de diciembre">
+                                </div>
+                                <br>
+                                <div>
+                                <label for="nombre">Actividades Realizadas</label>
+                                <input type="text" id="nombre" name="nombre">
+                                </div>
+                                <br>
+                                <div>
+                                <label for="apellido">Duración actividad (hrs)</label>
+                                <input type="number" id="apellido" name="apellido">
+                                </div>
+                                <br>
+                                <div>
+                                <label for="observacion">Observaciones</label>
+                                <input type="text" id="observacion" name="observacion">
+                                </div>
+                                <input type="submit" value="Generar Documento"  class="documentgen">
+                    </form>
+                </div>
+            </section>
+
+            <section class="InformeV3" id="InformeV32">
+                <h1 class="heading">Llena la Información requerida <span>Informe V 3.2</span></h1>
+
+                <div class="contentI">
+                    <div class="formPP1">
+                        <form>
+                            <h3>Periodo que cubre el presente informe</h3>
+
+                                <div>
+                                <label for="fecha_de_inicio">Fecha de inicio</label>
+                                <input type="date" id="fecha_de_inicio" name="fecha_de_inicio">
+                                
+                                <label for="fecha_de_fin">Fecha de inicio</label>
+                                <input type="date" id="fecha_de_fin" name="fecha_de_fin">
+                                
+                                </div>
+                                <br>    
+                        </form>
+                    </div>
+                </div>   
+
+                <div class="contentI">
+                    <form action="">
+                        <h3>Observaciones</h3>
+                                <div>
+                                <label for="observaciones">Observaciones</label>
+                                <input type="text" id="observaciones" name="observaciones">
+                                </div>
+                                <br>
+                                <input type="submit" value="Generar Documento"  class="documentgen">
+                    </form>
+                </div>
+            </section>
+
+            <section class="InformeV3" id="InformeV33">
+                <h1 class="heading">Llena la Información requerida <span>Informe V 3.3</span></h1>
+                <div class="contentI">
+                    <div class="formPP1">
+                        <form>
+                            <h3>Periodo que cubre el presente informe</h3>
+
+                                <div>
+                                <label for="fecha_de_inicio">Fecha de inicio</label>
+                                <input type="date" id="fecha_de_inicio" name="fecha_de_inicio">
+                                
+                                <label for="fecha_de_fin">Fecha de inicio</label>
+                                <input type="date" id="fecha_de_fin" name="fecha_de_fin">
+                                
+                                </div>
+                                <br>    
+                        </form>
+                    </div>
+                </div>   
+                <div class="contentI">
+                    <form action="">
+                        <h3>Observaciones</h3>
+                                <div>
+                                <label for="observaciones">Observaciones</label>
+                                <input type="text" id="observaciones" name="observaciones">
+                                </div>
+                                <br>
+                                <input type="submit" value="Generar Documento"  class="documentgen">
+                    </form>
+                </div>
+            </section>
+
+
+
+
+            <section class="footer">
+                <div class="share">
+                    <a href="https://twitter.com/schoolyachay?lang=en" target="_blank" class="fab fa-brands fa-twitter">
+                        <img src="icons/twitter.svg" alt="">
+                    </a>
+                    <a href="https://www.yachaytech.edu.ec/quimica/" target="_blank" class="fab faweb">
+                        <img src="icons/school1.svg" alt="">
+                    </a>
+                    <a href="https://www.yachaytech.edu.ec/" target="_blank" class="fab faweb">
+                        <img src="icons/school.svg" alt="">
+                    </a>
+                </div>
+                <div class="credit">
+                    Developed by <span>JFP&CAT</span> | All rights reserved.
+                </div>
+                <div>
+                <a href="#home" class="logo">
+                    <img src="images/logo.png" alt="" id="logo">
+                </a>
+            </div>
+            </section>
+        </div>
+    </div>
+    <script src="proyecto.js"></script>
+</body>
+</html>
