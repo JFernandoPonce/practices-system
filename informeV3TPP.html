@@ -123,10 +123,11 @@
                     </div>
                 </div>                
                 <div>
-                    <input type="button" value="Agregar Actividades">
+                    <input type="button" id="agregar_actividades" onclick="duplicateForm();" value="Agregar Actividades" class="documentgen">
                 </div>
                 <div class="contentI">
-                    <form action="">
+                    <div id="actividades">
+                    <form class="actividades_realizadas" action="">
                         <h3>Actividades Desarrolladas</h3>
                                 <div>
                                 <label for="fecha_de_actividad">Fecha de Actividad</label>
@@ -147,9 +148,10 @@
                                 <label for="observacion">Observaciones</label>
                                 <input type="text" id="observacion" name="observacion">
                                 </div>
-                                <input type="submit" value="Generar Documento"  class="documentgen">
                     </form>
+                    </div>
                 </div>
+                <input type="submit" value="Generar Documento" class="documentgen">
             </section>
 
             <section class="InformeV3" id="InformeV32">

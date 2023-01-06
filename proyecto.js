@@ -15,9 +15,6 @@ window.onclick = function(event) {
 const username = document.forms['form']['username'];
 const password = document.forms['form']['password'];
 
-var icons = document.getElementsByClassName(".icons");
-var proyectos = document.getElementById("#proyectos");
-
 document.querySelector("#user-btn").addEventListener("click",function(){
     document.querySelector(".login-form").classList.add("popup");
 
@@ -96,4 +93,10 @@ document.querySelector("#btn-PPP").addEventListener("click",function(){
 });
 
 
-
+function duplicateForm() {
+    const div = document.getElementById("actividades");
+    let forms = div.getElementsByClassName('actividades_realizadas');
+    let firstForm = forms[0];
+    let formClone = firstForm.cloneNode(true);
+    div.appendChild(formClone);
+  }

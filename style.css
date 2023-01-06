@@ -346,8 +346,6 @@ form {
     margin-top: 1.5em;
 }
 
-
-
 .homero {
     align-items: center;
     padding: 10px;
@@ -429,11 +427,10 @@ form {
 .documentgen {
     font-size: 1rem;
     font-weight: bold;
-    float: right;
-    margin-top: 7em;
-    margin-right: 15em;
-    padding: 1em;
     cursor: pointer;
+    margin-inline-start: 35em;
+    margin-block-start: 1em;
+    padding: 0.5em;
 }
 
 #ipp {
@@ -475,7 +472,8 @@ form {
     padding: 0.25rem 0rem;
     align-items: center;
     width: 80rem;
-    height: 40rem;
+    max-height: 80rem;
+    min-height: 40rem;
     margin: 0 auto;
     margin-top: 3rem;
     display: none;
