@@ -1,0 +1,27 @@
+{
+  "name": "practices-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "google-api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JFernandoPonce/practices-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JFernandoPonce/practices-system/issues"
+  },
+  "homepage": "https://github.com/JFernandoPonce/practices-system#readme",
+  "dependencies": {
+    "docx-pdf": "^0.0.1",
+    "docxtemplater": "^3.33.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "pizzip": "^3.1.4"
+  }
+}
