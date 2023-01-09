@@ -20,9 +20,9 @@ function initClient(){
         discoveryDocs: DISCOVERY_DOCS,
         scope: SCOPES
     }).then(function(){
-        gapi.auth2.getAuthInstance().isSingedIn.listen(updateSigninStatus);
-
-        updateSigninStatus(gapi.auth2.getAuthInstance().isSingedIn.get());
+        gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
+        console.log("EUREKA")
+        updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
         signinButton.onclick = handleSignin;
         logoutButton.onclick = handleSignout;
     }, function(error){
@@ -30,7 +30,7 @@ function initClient(){
     })
 }
  
-function updateSigninStatus(isSingedIn) {
+function updateSigninStatus(isSignedIn) {
     if (isSignedIn) {
         signinButton.style.display = 'none';
         logoutButton.style.display = 'block';

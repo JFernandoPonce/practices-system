@@ -644,5 +644,5 @@ section {
 
 #user-btn, #logout {
     height: 4rem;
-    display: none;
+    display: block;
 }
