@@ -642,7 +642,7 @@ section {
     cursor: pointer;
 }
 
-#logout {
-    float: right;
+#user-btn, #logout {
     height: 4rem;
+    display: none;
 }

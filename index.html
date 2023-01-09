@@ -22,9 +22,8 @@
                         <a href="#ProyectosdeVinculacion" class="bar">Proyectos de Vinculación</a>
                     </nav>
                     <div class="saludo"></div>
-                    <a class="logo">
-                        <img src="icons/login.svg" alt="" id="user-btn">
-                    </a>
+                    <button id="user-btn" type="button" onclick="handleSignin();">Entra</button>
+                    <button id="logout" type="button" onclick="handleSignin();">Sale</button>
                 </header>
                 <div class="login-form" id="theLogin">
                     <form name="form" action="" method="GET" onsubmit="return evaluateForm()">
@@ -108,5 +107,7 @@
 
     </div>
 <script src="proyecto.js"></script>    
+<script src="https://apis.google.com/js/api.js"></script>
+<script src="google-api.js"></script>
 </body>
 </html>
