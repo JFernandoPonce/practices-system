@@ -1,4 +1,4 @@
-var genButton = document.getElementById("v32button");
+var docs = document.getElementById("doc");
 
 function generateDoc(){
 
@@ -8,10 +8,10 @@ function generateDoc(){
     // const path = require("path");
 
     var reader = new FileReader();
-    if (genButton.files.length === 0) {
+    if (docs.files.length === 0) {
         alert("No files selected");
     }
-    reader.readAsBinaryString(genButton.files.item(0));
+    reader.readAsBinaryString(docs.files.item(0));
 
     reader.onerror = function (evt) {
         console.log("error reading file", evt);
@@ -44,7 +44,7 @@ function generateDoc(){
 
         doc.render({
             name: name,
-            id_number: cedula,
+            id: cedula,
             semestre: semestre,
             carrera: carrera,
             escuela: escuela,
