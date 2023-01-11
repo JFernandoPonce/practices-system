@@ -19,7 +19,7 @@
                         <img src="images/logo.png" alt="" id="logo">
                     </a>
                     <nav class="navbar">
-                        <h1 class="headerI">Crear Informe Tipo V <br> Practicas PreProfesionales</h1>
+                        <h1 class="headerI">Crear Informe Tipo V5 <br> Practicas PreProfesionales</h1>
                     </nav>
                 </header>
             </div>
@@ -31,7 +31,7 @@
                 
                 <div class="contentI">
                     <form action="">
-                        <h3>Información General</h3>
+                        <h3>Datos Generales</h3>
                             <h5>Estudiante Participante</h5>
                                 <div>
                                 <label for="nombre_estudiante">Nombre</label>
@@ -53,6 +53,15 @@
                                 <label for="escuela">Escuela:</label>
                                 <input type="text" id="escuela" name="escuela">
                                 </div>
+                                <br>
+                                <div>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+                                    
+                                <label for="telefono">Telefono:</label>
+                                <input type="text" id="telefono" name="escuela">
+                                </div>
+
                             <h5>Periodo de duracion del proyecto</h5>
 
                             <div>
@@ -72,7 +81,7 @@
                                 <input type="text" id="cedulaTutor" name="cedulaTutor">
                                 </div>
                             
-                            <h5>Comunidad Beneficiaria</h5>
+                            <h5>Alcance Territorial de las practicas</h5>
 
                             <div>
                                 <label for="caracteristicasC">Caracteristicas de la comunidad/Entidad Benenficiaria:</label>
@@ -91,6 +100,11 @@
                                 <label for="cedulaRC">Cédula:</label>
                                 <input type="text" id="cedulaRC" name="cedulaRC">
                             </div>
+                            <h5>Total de horas investidas</h5>
+                            <div>
+                                <label for="horasEmpleadas">Nombre representante de la comunidad:</label>
+                                <input type="text" id="horasEmpleadas" name="horasEmpleadas">
+                            </div>
 
 
                     </form>
@@ -98,21 +112,25 @@
 
                 <div class="botonesV3">
                     <a href="#InformeV31"> 
-                        <button onclick="buttonV31()" class="dropbtn" id="informeV31">Informe V3.1</button> 
+                        <button onclick="buttonV31()" class="dropbtn" id="informeV31">Informe V5.1</button> 
                     </a>
 
                     <a href="#InformeV32">
-                        <button onclick="buttonV32()" class="dropbtn" id="informeV32">Informe V3.2</button>
+                        <button onclick="buttonV32()" class="dropbtn" id="informeV32">Informe V5.2</button>
                     </a>
                     
                     <a href="#InformeV33">
-                        <button onclick="buttonV33()" class="dropbtn" id="informeV33">Informe V3.3</button>
+                        <button onclick="buttonV33()" class="dropbtn" id="informeV33">Informe V5.3</button>
+                    </a>
+
+                    <a href="#InformeV34">
+                        <button onclick="buttonV34()" class="dropbtn" id="informeV34">Informe V5.4</button>
                     </a>
                 </div>
             </section>
 
             <section class="InformeV3" id="InformeV31">
-                <h1 class="heading">Llena la Información requerida <span>Informe V 3.1</span></h1>
+                <h1 class="heading">Llena la Información requerida <span>Informe V 5.1</span></h1>
                 
                 <div class="contentI">
                     <div class="formPP1">
@@ -120,11 +138,11 @@
                             <h3>Periodo que cubre el presente informe</h3>
 
                                 <div>
-                                <label for="fechaInicio31">Fecha de inicio</label>
-                                <input type="text" id="fechaInicio31" name="fechaInicio31" placeholder="XX de ---- de XXXX">
+                                <label for="fechaInicio51">Fecha de inicio</label>
+                                <input type="text" id="fechaInicio51" name="fechaInicio51" placeholder="XX de ---- de XXXX">
                                 
-                                <label for="fechaFinal31">Fecha de inicio</label>
-                                <input type="text" id="fechaFinal31" name="fechaFinal31" placeholder="XX de ---- de XXXX">
+                                <label for="fechaFinal51">Fecha de inicio</label>
+                                <input type="text" id="fechaFinal51" name="fechaFinal51" placeholder="XX de ---- de XXXX">
                                 
                                 </div>
                                 <br>    
@@ -159,7 +177,7 @@
                                 </div>
                                 <br>
                                 <div>
-                                <label for="duraciontotal">Duracion toal:</label>
+                                <label for="duraciontotal">Duracion total</label>
                                 <input type="text" id="duraciontotal" name="duraciontotal">
                                 </div>
                                 <br>
@@ -175,12 +193,12 @@
                     </form>
                     </div>
                 </div>
-                <input type="file" value="Generar Documento"  id="doc31" class="documentgen">
-                <button onclick="generateDoc31();" class="documentgen">Generar Documento</button>
+                <input type="file" value="Generar Documento"  id="doc51" class="documentgen">
+                <button onclick="generateDoc51();" class="documentgen">Generar Documento</button>
             </section>
 
             <section class="InformeV3" id="InformeV32">
-                <h1 class="heading">Llena la Información requerida <span>Informe V 3.2</span></h1>
+                <h1 class="heading">Llena la Información requerida <span>Informe V 5.2</span></h1>
 
                 <div class="contentI">
                     <div class="formPP1">
@@ -188,11 +206,11 @@
                             <h3>Periodo que cubre el presente informe</h3>
 
                                 <div>
-                                <label for="fechaInicio32">Fecha de inicio</label>
-                                <input type="text" id="fechaInicio32" name="fechaInicio32" placeholder="XX de ---- de XXXX">
+                                <label for="fechaInicio52">Fecha de inicio</label>
+                                <input type="text" id="fechaInicio52" name="fechaInicio52" placeholder="XX de ---- de XXXX">
                                 
-                                <label for="fechaFinal32">Fecha de inicio</label>
-                                <input type="text" id="fechaFinal32" name="fechaFinal32" placeholder="XX de ---- de XXXX">
+                                <label for="fechaFinal52">Fecha de inicio</label>
+                                <input type="text" id="fechaFinal52" name="fechaFinal52" placeholder="XX de ---- de XXXX">
                                 
                                 </div>
                                 <br>    
@@ -210,23 +228,23 @@
                                 <br>
                     </form>
                 </div>
-                <input type="file" value="Generar Documento"  id="doc32" class="documentgen">
-                <button onclick="generateDoc32();" class="documentgen">Generar Documento</button>
+                <input type="file" value="Generar Documento"  id="doc52" class="documentgen">
+                <button onclick="generateDoc52();" class="documentgen">Generar Documento</button>
             </section>
 
             <section class="InformeV3" id="InformeV33">
-                <h1 class="heading">Llena la Información requerida <span>Informe V 3.3</span></h1>
+                <h1 class="heading">Llena la Información requerida <span>Informe V 5.3</span></h1>
                 <div class="contentI">
                     <div class="formPP1">
                         <form>
                             <h3>Periodo que cubre el presente informe</h3>
 
                                 <div>
-                                <label for="fechaInicio33">Fecha de inicio</label>
-                                <input type="text" id="fechaInicio33" name="fechaInicio33">
+                                <label for="fechaInicio53">Fecha de inicio</label>
+                                <input type="text" id="fechaInicio53" name="fechaInicio53">
                                 
-                                <label for="fechaFinal33">Fecha de inicio</label>
-                                <input type="text" id="fechaFinal33" name="fechaFinal33">
+                                <label for="fechaFinal53">Fecha de inicio</label>
+                                <input type="text" id="fechaFinal53" name="fechaFinal53">
                                 
                                 </div>
                                 <br>    
@@ -243,10 +261,41 @@
                                 <br>
                     </form>
                 </div>
-                <input type="file" value="Generar Documento"  id="doc33" class="documentgen">
-                <button onclick="generateDoc33();" class="documentgen">Generar Documento</button>
+                <input type="file" value="Generar Documento"  id="doc53" class="documentgen">
+                <button onclick="generateDoc53();" class="documentgen">Generar Documento</button>
             </section>
+            <section class="InformeV3" id="InformeV34">
+                <h1 class="heading">Llena la Información requerida <span>Informe V 5.4</span></h1>
+                <div class="contentI">
+                    <div class="formPP1">
+                        <form>
+                            <h3>Periodo que cubre el presente informe</h3>
 
+                                <div>
+                                <label for="fechaInicio54">Fecha de inicio</label>
+                                <input type="text" id="fechaInicio54" name="fechaInicio54">
+                                
+                                <label for="fechaFinal54">Fecha de inicio</label>
+                                <input type="text" id="fechaFinal54" name="fechaFinal54">
+                                
+                                </div>
+                                <br>    
+                        </form>
+                    </div>
+                </div>   
+                <div class="contentI">
+                    <form action="">
+                        <h3>Observaciones</h3>
+                                <div>
+                                <label for="observaciones">Observaciones</label>
+                                <input type="text" id="observaciones" name="observaciones">
+                                </div>
+                                <br>
+                    </form>
+                </div>
+                <input type="file" value="Generar Documento"  id="doc54" class="documentgen">
+                <button onclick="generateDoc54();" class="documentgen">Generar Documento</button>>
+            </section>
 
 
 
@@ -280,7 +329,7 @@
     <script src="https://unpkg.com/pizzip@3.1.4/dist/pizzip-utils.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/path.js/0.8.4/path.min.js" integrity="sha512-RTzm9c0aNZYxh3AlthYNipI3HCmUTR/hgKqHkcHR3et5IyUDgGlRdInuW8MuN5TliQMS6+M+x2Gl/2WhmmJ5ew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/1.0.2/package/lib/browser/fs.js"></script>
-    <script src="script.js"></script>
+    <script src="pdf-script.js"></script>
 
 </body>
 </html>

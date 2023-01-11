@@ -74,7 +74,9 @@ function buttonV33 () {
     document.querySelector("#InformeV33").classList.toggle("elegido")
 };
 
-
+function buttonV34 () {
+    document.querySelector("#InformeV34").classList.toggle("elegido")
+};
 
 
 
