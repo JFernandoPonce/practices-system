@@ -38,15 +38,25 @@ function generateDoc31(){
         const semestre = document.getElementById("semestre").value;
         const carrera = document.getElementById("carrera").value;
         const escuela = document.getElementById("escuela").value;
+        const inicioProyecto = document.getElementById("inicioProyecto").value;
+        const finProyecto = document.getElementById("finProyecto").value;
         const tutor = document.getElementById("nombreTutor").value;
         const idTutor = document.getElementById("cedulaTutor").value;
         const caracteristicasC = document.getElementById("caracteristicasC").value;
         const numeroBen = document.getElementById("numeroBen").value;
         const nombreRC = document.getElementById("nombreRC").value;
         const idRC = document.getElementById("cedulaRC").value;
-        const inicioDate = document.getElementById("fecha_de_inicio").value;
-        const endDate = document.getElementById("fecha_de_fin").value;
-        const observaciones = document.getElementById("observaciones").value;
+        const inicioDate = document.getElementById("fechaInicio31").value;
+        const endDate = document.getElementById("fechaFinal31").value;
+        const fechaActvidad = document.getElementById("fecha_de_actividad").value;
+        const actvidad = document.getElementById("actividadRealizada").value;
+        const duracionActividad = document.getElementById("duracionActividad").value;
+        const observaciones = document.getElementById("observacion").value;
+        const duracionTotal = document.getElementById("duraciontotal").value;
+        const conclusiones = document.getElementById("conclusiones").value;
+        const recomendaciones = document.getElementById("recomendaciones").value;
+
+        
 
         doc.render({
             name: name,
@@ -54,6 +64,8 @@ function generateDoc31(){
             semestre: semestre,
             carrera: carrera,
             escuela: escuela,
+            inicioProyecto: inicioProyecto,
+            finProyecto: finProyecto,
             tutor: tutor,
             idTutor: idTutor,
             caracteristicasC: caracteristicasC,
@@ -62,7 +74,13 @@ function generateDoc31(){
             idRC: idRC,
             inicioDate: inicioDate,
             endDate: endDate,
-            observaciones: observaciones
+            fechaActvidad: fechaActvidad,
+            actvidad: actvidad,
+            duracionActividad: duracionActividad,
+            observaciones: observaciones,
+            duracionTotal: duracionTotal,
+            conclusiones: conclusiones,
+            recomendaciones: recomendaciones,
         });
 
         var blob = doc.getZip().generate({
@@ -186,14 +204,16 @@ function generateDoc33(){
         const semestre = document.getElementById("semestre").value;
         const carrera = document.getElementById("carrera").value;
         const escuela = document.getElementById("escuela").value;
+        const inicioProyecto = document.getElementById("inicioProyecto").value;
+        const finProyecto = document.getElementById("finProyecto").value;
         const tutor = document.getElementById("nombreTutor").value;
         const idTutor = document.getElementById("cedulaTutor").value;
         const caracteristicasC = document.getElementById("caracteristicasC").value;
         const numeroBen = document.getElementById("numeroBen").value;
         const nombreRC = document.getElementById("nombreRC").value;
         const idRC = document.getElementById("cedulaRC").value;
-        const inicioDate = document.getElementById("fecha_de_inicio").value;
-        const endDate = document.getElementById("fecha_de_fin").value;
+        const inicioDate = document.getElementById("fechaInicio32").value;
+        const endDate = document.getElementById("fechaFinal32").value;
         const observaciones = document.getElementById("observaciones").value;
 
         doc.render({
@@ -202,6 +222,8 @@ function generateDoc33(){
             semestre: semestre,
             carrera: carrera,
             escuela: escuela,
+            inicioProyecto: inicioProyecto,
+            finProyecto: finProyecto,
             tutor: tutor,
             idTutor: idTutor,
             caracteristicasC: caracteristicasC,
@@ -258,15 +280,26 @@ function generateDoc51(){
         const semestre = document.getElementById("semestre").value;
         const carrera = document.getElementById("carrera").value;
         const escuela = document.getElementById("escuela").value;
+        const email = document.getElementById("email").value;
+        const telefono = document.getElementById("telefono").value;
+        const inicioProyecto = document.getElementById("inicioProyecto").value;
+        const finProyecto = document.getElementById("finProyecto").value;
         const tutor = document.getElementById("nombreTutor").value;
         const idTutor = document.getElementById("cedulaTutor").value;
         const caracteristicasC = document.getElementById("caracteristicasC").value;
         const numeroBen = document.getElementById("numeroBen").value;
         const nombreRC = document.getElementById("nombreRC").value;
         const idRC = document.getElementById("cedulaRC").value;
-        const inicioDate = document.getElementById("fecha_de_inicio").value;
-        const endDate = document.getElementById("fecha_de_fin").value;
-        const observaciones = document.getElementById("observaciones").value;
+        const horasProyecto = document.getElementById("horasEmpleadas").value;
+        const inicioDate = document.getElementById("fechaInicio51").value;
+        const endDate = document.getElementById("fechaFinal51").value;
+        const fechaActvidad = document.getElementById("fecha_de_actividad").name;
+        const actividad = document.getElementById("actividadRealizada").name;
+        const duracionActividad = document.getElementById("duracionActividad").name;
+        const observaciones = document.getElementById("observacion").value;
+        const duracionTotal = document.getElementById("duraciontotal").value;
+        const conclusiones = document.getElementById("conclusiones").value;
+        const recomendaciones = document.getElementById("recomendaciones").value;
 
         doc.render({
             name: name,
@@ -274,15 +307,26 @@ function generateDoc51(){
             semestre: semestre,
             carrera: carrera,
             escuela: escuela,
+            email: email,
+            telefono: telefono,
+            inicioProyecto: inicioProyecto,
+            finProyecto: finProyecto,
             tutor: tutor,
             idTutor: idTutor,
             caracteristicasC: caracteristicasC,
             numeroBen: numeroBen,
             nombreRC: nombreRC,
             idRC: idRC,
+            horasProyecto: horasProyecto,
             inicioDate: inicioDate,
             endDate: endDate,
-            observaciones: observaciones
+            fechaActvidad: fechaActvidad,
+            actividad: actividad,
+            duracionActividad: duracionActividad,
+            observaciones: observaciones,
+            duracionTotal: duracionTotal,
+            conclusiones: conclusiones,
+            recomendaciones: recomendaciones
         });
 
         var blob = doc.getZip().generate({

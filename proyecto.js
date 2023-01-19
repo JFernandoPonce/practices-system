@@ -100,5 +100,6 @@ function duplicateForm() {
     let forms = div.getElementsByClassName('actividades_realizadas');
     let firstForm = forms[0];
     let formClone = firstForm.cloneNode(true);
+    formClone.id = `activity${forms.length}`;
     div.appendChild(formClone);
   }
