@@ -25,8 +25,8 @@ if(isset($_POST['entrar'])){
             if($user_type == "estudiante"){
                 header("location:estudiantes.html");
             }
-            if($user_type == "admin"){
-                header("location:Admin.html");
+            if($user_type == "profesor"){
+                header("location:profesor.html");
             }
             if($user_type == "comunidad"){
                 header("location:comunidad.html");
