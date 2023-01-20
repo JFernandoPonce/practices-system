@@ -59,7 +59,21 @@ function myFunction2() {
 function myFunction3() {
     document.getElementById("myDropdown3").classList.toggle("show");
 };
+
+function myFunction4() {
+    document.getElementById("myDropdown4").classList.toggle("show");
+};
     
+function dropInformesAdmin(tipo){
+    if (tipo == "firmaspracticas") {document.getElementById("dropdownFirmasAdminPracticas").classList.toggle("show");}
+    else if (tipo == "firmasvinculacion") {document.getElementById("dropdownFirmasAdminVinculacion").classList.toggle("show");}
+    else if (tipo == 'descargarPracticas') {document.getElementById("dropdownDescargarInformeAdminPracticas").classList.toggle("show");}
+    else if (tipo == 'descargarVinculacion') {document.getElementById("dropdownDescargarInformesAdminVinculacion").classList.toggle("show");}
+};
+
+/* function dropInformesFirmasAdminPracticas(){
+    document.getElementById("dropdownFirmasAdminVinculacion").classList.toggle("show");
+}; */
 
 
 function buttonV31 () {
@@ -78,9 +92,33 @@ function buttonV34 () {
     document.querySelector("#InformeV34").classList.toggle("elegido")
 };
 
+function closeFirmaV3(){
+    document.querySelector(".uploadInformeV3").classList.remove("popup");
+};
 
+function uploadFirmaV5(){
+    document.querySelector(".uploadInformeV5").classList.add("popup");
+};
+function closeFirmaV5(){
+    document.querySelector(".uploadInformeV5").classList.remove("popup");
+};
 
+function uploadFirmaV3(){
+    document.querySelector(".uploadInformeV3").classList.add("popup");
+};
 
+function descargarInformes(type){
+    if (type == "InformeV3"){document.querySelector(".descargarInformeAdminV3").classList.add("popup");}
+    if (type == "InformeV5"){document.querySelector(".descargarInformeAdminV5").classList.add("popup");}
+
+}
+
+function closePopup(clase){
+    if (clase == "informeV3"){document.querySelector(".descargarInformeAdminV3").classList.remove("popup");}
+    if (clase == "informeV5"){document.querySelector(".descargarInformeAdminV5").classList.remove("popup");}
+
+    
+}
 
 var closeLogin = document.querySelector(".close-btn").addEventListener("click",function(){
     document.querySelector(".login-form").classList.remove("popup");
@@ -93,6 +131,7 @@ document.querySelector("#btn-home").addEventListener("click",function(){
 document.querySelector("#btn-PPP").addEventListener("click",function(){
     document.querySelector(".login-form").classList.add("popup");
 });
+
 
 
 function duplicateForm() {
