@@ -1,3 +1,50 @@
+<?php
+error_reporting(0);
+
+include 'php/connect.php';
+
+if(isset($_POST['entrar'])){ 
+    $ruser = $connect->real_escape_string($_POST['username']);
+    $rpass = $connect->real_escape_string(md5($_POST['password']));
+
+    $query = "SELECT * FROM users WHERE user_name = '$ruser' AND password = '$rpass'";
+     
+    if($result = $connect->query($query)){
+        while($row = $result->fetch_array()){
+            $userok = $row['user_name'];
+            $passwordok = $row['password'];
+            $user_type = $row['user_type'];
+        }
+        $result->close();
+    }
+    $connect->close();
+    if(isset($ruser) && isset($rpass)){
+        if($ruser == $userok && $rpass == $passwordok){
+            $_SESSION['login'] = TRUE;
+            $_SESSION['USUARIO'] = $user;
+            if($user_type == "estudiante"){
+                header("location:estudiantes.html");
+            }
+            if($user_type == "admin"){
+                header("location:Admin.html");
+            }
+            if($user_type == "comunidad"){
+                header("location:comunidad.html");
+            }
+            else{
+                echo '<script>alert("Error en tipo de usuario")</script>';
+            }
+        }
+        else {
+            echo '<script>alert("Por favor verifica tus datos")</script>';
+        }
+    }
+    else{
+        echo '<script>alert("Por favor verifica tus datos")</script>';
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,12 +72,12 @@
                     <button id="user-btn" type="button">Entrar</button> 
                 </header>
                 <div class="login-form" id="theLogin">
-                    <form name="form" action="" method="GET" onsubmit="return evaluateForm()">
+                    <form name="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                         <h3>Login</h3>
-                        <input type="text" placeholder="Username" class="box" id="username">
-                        <input type="password" placeholder="Password" class="box" id="password">
+                        <input type="text" placeholder="Username" class="box" id="username" name="username">
+                        <input type="password" placeholder="Password" class="box" id="password" name="password">
                         <p> No tienes una cuenta? <a href="#home">Regístrate!</a></p>
-                        <input type="submit" class="btn-lg" id="btn-lg" value="Sign in">
+                        <input type="submit" class="btn-lg" id="btn-lg" value="Sign in" name="entrar">
                         <div class="close-btn">&times;</div>
                     </form>
                 </div>
