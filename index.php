@@ -1,4 +1,5 @@
 <?php
+session_start();
 error_reporting(0);
 
 include 'php/connect.php';
@@ -21,9 +22,9 @@ if(isset($_POST['entrar'])){
     if(isset($ruser) && isset($rpass)){
         if($ruser == $userok && $rpass == $passwordok){
             $_SESSION['login'] = TRUE;
-            $_SESSION['USUARIO'] = $user;
-            if($user_type == "estudiante"){
-                header("location:estudiantes.html");
+            $_SESSION['user_name'] = $ruser;
+            if($user_type == "student"){
+                header("location:estudiantes.php");
             }
             if($user_type == "admin"){
                 header("location:Admin.html");
