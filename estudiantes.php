@@ -1,3 +1,16 @@
+<?php
+
+session_start();
+include 'php/connect.php';
+
+$user = $_SESSION['user_name'];
+
+if(!isset($user)){
+    header("location:index.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +41,7 @@
             <section class="home" id="home">
                 <div class="homero">
                     <h3>Bienvenido al Servicio de Integración Proyectos de Vinculación</h3>
-                    <p>¡Hola, Usuario!</p>
+                    <p>¡Hola, <?php echo $user?>!</p>
                 </div>
             </section>
             <section class="PracticasPreProfesionales" id="PracticasPreProfesionales">
