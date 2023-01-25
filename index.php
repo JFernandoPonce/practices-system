@@ -12,6 +12,7 @@ if(isset($_POST['entrar'])){
      
     if($result = $connect->query($query)){
         while($row = $result->fetch_array()){
+            $user_id = $row['id'];
             $userok = $row['user_name'];
             $passwordok = $row['password'];
             $user_type = $row['user_type'];
@@ -23,6 +24,7 @@ if(isset($_POST['entrar'])){
         if($ruser == $userok && $rpass == $passwordok){
             $_SESSION['login'] = TRUE;
             $_SESSION['user_name'] = $ruser;
+            $_SESSION['user_id'] = $user_id;
             if($user_type == "student"){
                 header("location:estudiantes.php");
             }

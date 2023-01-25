@@ -4,10 +4,19 @@ session_start();
 include 'php/connect.php';
 
 $user = $_SESSION['user_name'];
+$user_id = $_SESSION['user_id'];
 
 if(!isset($user)){
     header("location:index.php");
 }
+
+$select_projectsv = "SELECT * FROM projects_members INNER JOIN projects ON projects_members.project_id = projects.id WHERE user_id = {$user_id} AND project_type = 'vinculacion'";
+$query_vinc = $connect->query($select_projectsv);
+$vinculacion = $query_vinc->fetch_assoc();
+
+$select_projectsp = "SELECT * FROM projects_members INNER JOIN projects ON projects_members.project_id = projects.id WHERE user_id = {$user_id} AND project_type = 'preprofesionales'";
+$query_vinc = $connect->query($select_projectsp);
+$preprofesionales = $query_vinc->fetch_assoc();
 
 ?>
 
@@ -57,7 +66,7 @@ if(!isset($user)){
                         <div class="cart-item">
                             <img src="images/logo.png" alt="">
                             <div class="contentP">
-                                <h3>Proyecto1</h3>
+                                <h3><?php echo $preprofesionales["project_name"]?></h3>
                                 <div class="dropdown">
                                     <button onclick="myFunction()" class="dropbtn">Crear Informe</button>
                                     <div id="myDropdown" class="dropdown-content">
@@ -85,7 +94,7 @@ if(!isset($user)){
                         <div class="cart-item">
                             <img src="images/logo.png" alt="">
                             <div class="contentP">
-                                 <h3>Proyecto1</h3>
+                                 <h3><?php echo $vinculacion["project_name"]?></h3>
                                  <div class="dropdown">
                                     <button onclick="myFunction2()" class="dropbtn">Crear Informe</button>
                                     <div id="myDropdown2" class="dropdown-content">
