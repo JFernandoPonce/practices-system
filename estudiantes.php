@@ -124,7 +124,7 @@ if(!isset($user)){
                 <a href="#home" class="logo">
                     <img src="images/logo.png" alt="" id="logo">
                 </a>
-                <a href="index.html" class="logo">
+                <a href="php/closesession.php" class="logo">
                     <img src="icons/logout.svg" alt="" id="logout">
                 </a>
             </div>
