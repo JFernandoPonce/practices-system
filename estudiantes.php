@@ -10,9 +10,10 @@ if(!isset($user)){
     header("location:index.php");
 }
 
-$select_projectsv = "SELECT * FROM projects_members INNER JOIN projects ON projects_members.project_id = projects.id WHERE user_id = {$user_id} AND project_type = 'vinculacion'";
+$select_projectsv = "SELECT projects_members.id, projects.project_name FROM projects_members INNER JOIN projects ON projects_members.project_id = projects.id WHERE user_id = {$user_id} AND project_type = 'vinculacion'";
 $query_vinc = $connect->query($select_projectsv);
 $vinculacion = $query_vinc->fetch_assoc();
+$_SESSION['vinculacion_id'] = $vinculacion['id'];
 
 $select_projectsp = "SELECT * FROM projects_members INNER JOIN projects ON projects_members.project_id = projects.id WHERE user_id = {$user_id} AND project_type = 'preprofesionales'";
 $query_vinc = $connect->query($select_projectsp);
@@ -98,7 +99,7 @@ $preprofesionales = $query_vinc->fetch_assoc();
                                  <div class="dropdown">
                                     <button onclick="myFunction2()" class="dropbtn">Crear Informe</button>
                                     <div id="myDropdown2" class="dropdown-content">
-                                      <a href="informeV3TPV.html" target="_blank">Informe V3</a>
+                                      <a href="informeV3TPV.php" target="_blank">Informe V3</a>
                                       <a href="informeV5TPV.html" target="_blank">Informe V5</a>
                                     </div>
                                 </div> 
