@@ -103,10 +103,10 @@ $data = $query_data->fetch_assoc();
 
                             <div>
                                 <label for="nombreRC">Nombre representante de la comunidad:</label>
-                                <input type="text" id="nombreRC" name="nombreRC">
+                                <input type="text" id="nombreRC" name="nombreRC" value="<?php echo $data["representante_comunidad"]?>">
                                 <br>
                                 <label for="cedulaRC">Cédula:</label>
-                                <input type="text" id="cedulaRC" name="cedulaRC">
+                                <input type="text" id="cedulaRC" name="cedulaRC" value="<?php echo $data["representante_cedula"]?>">
                             </div>
 
 
