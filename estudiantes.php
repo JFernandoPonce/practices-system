@@ -1,3 +1,26 @@
+<?php
+
+session_start();
+include 'php/connect.php';
+
+$user = $_SESSION['user_name'];
+$user_id = $_SESSION['user_id'];
+
+if(!isset($user)){
+    header("location:index.php");
+}
+
+$select_projectsv = "SELECT projects_members.id, projects.project_name FROM projects_members INNER JOIN projects ON projects_members.project_id = projects.id WHERE user_id = {$user_id} AND project_type = 'vinculacion'";
+$query_vinc = $connect->query($select_projectsv);
+$vinculacion = $query_vinc->fetch_assoc();
+$_SESSION['vinculacion_id'] = $vinculacion['id'];
+
+$select_projectsp = "SELECT * FROM projects_members INNER JOIN projects ON projects_members.project_id = projects.id WHERE user_id = {$user_id} AND project_type = 'preprofesionales'";
+$query_vinc = $connect->query($select_projectsp);
+$preprofesionales = $query_vinc->fetch_assoc();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +51,7 @@
             <section class="home" id="home">
                 <div class="homero">
                     <h3>Bienvenido al Servicio de Integración Proyectos de Vinculación</h3>
-                    <p>¡Hola, Usuario!</p>
+                    <p>¡Hola, <?php echo $user?>!</p>
                 </div>
             </section>
             <section class="PracticasPreProfesionales" id="PracticasPreProfesionales">
@@ -44,7 +67,7 @@
                         <div class="cart-item">
                             <img src="images/logo.png" alt="">
                             <div class="contentP">
-                                <h3>Proyecto1</h3>
+                                <h3><?php echo $preprofesionales["project_name"]?></h3>
                                 <div class="dropdown">
                                     <button onclick="myFunction()" class="dropbtn">Crear Informe</button>
                                     <div id="myDropdown" class="dropdown-content">
@@ -72,11 +95,11 @@
                         <div class="cart-item">
                             <img src="images/logo.png" alt="">
                             <div class="contentP">
-                                 <h3>Proyecto1</h3>
+                                 <h3><?php echo $vinculacion["project_name"]?></h3>
                                  <div class="dropdown">
                                     <button onclick="myFunction2()" class="dropbtn">Crear Informe</button>
                                     <div id="myDropdown2" class="dropdown-content">
-                                      <a href="informeV3TPV.html" target="_blank">Informe V3</a>
+                                      <a href="informeV3TPV.php" target="_blank">Informe V3</a>
                                       <a href="informeV5TPV.html" target="_blank">Informe V5</a>
                                     </div>
                                 </div> 
@@ -111,7 +134,7 @@
                 <a href="#home" class="logo">
                     <img src="images/logo.png" alt="" id="logo">
                 </a>
-                <a href="index.html" class="logo">
+                <a href="php/closesession.php" class="logo">
                     <img src="icons/logout.svg" alt="" id="logout">
                 </a>
             </div>

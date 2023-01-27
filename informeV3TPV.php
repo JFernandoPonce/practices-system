@@ -1,3 +1,20 @@
+<?php
+
+session_start();
+include 'php/connect.php';
+
+$user = $_SESSION['user_name'];
+$member_id = $_SESSION['vinculacion_id'];
+
+if(!isset($user)){
+    header("location:index.php");
+}
+
+$select_data = "SELECT * FROM vinculacion_general WHERE member_id ={$member_id}";
+$query_data = $connect->query($select_data);
+$data = $query_data->fetch_assoc();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,51 +52,51 @@
                             <h5>Estudiante Participante</h5>
                                 <div>
                                 <label for="nombre_estudiante">Nombre</label>
-                                <input type="text" id="nombre_estudiante" name="nombre_estudiante">
+                                <input type="text" id="nombre_estudiante" name="nombre_estudiante" value="<?php echo $data["name"]?>">
                                 </div>
                                 <br>
                                 <div>
                                 <label for="idname">Cédula:</label>
-                                <input type="text" id="idname" name="idname">
+                                <input type="text" id="idname" name="idname" value="<?php echo $data["cedula"]?>">
                                 
                                 <label for="semestre">Semestre:</label>
-                                <input type="text" id="semestre" name="semestre">
+                                <input type="text" id="semestre" name="semestre" value="<?php echo $data["semestre"]?>">
                                 </div>
                                 <br>
                                 <div>
                                 <label for="carrera">Carrera:</label>
-                                <input type="text" id="carrera" name="carrera">
+                                <input type="text" id="carrera" name="carrera" value="<?php echo $data["carrera"]?>">
                                     
                                 <label for="escuela">Escuela:</label>
-                                <input type="text" id="escuela" name="escuela">
+                                <input type="text" id="escuela" name="escuela" value="<?php echo $data["escuela"]?>">
                                 </div>
                             <h5>Periodo de duracion del proyecto</h5>
 
                             <div>
                                 <label for="inicioProyecto">Fecha de Inicio:</label>
-                                <input type="text" id="inicioProyecto" name="inicioProyecto">
+                                <input type="text" id="inicioProyecto" name="inicioProyecto" value="<?php echo $data["fecha_inicio"]?>">
                                 
                                 <label for="finProyecto">Fecha de finalizacion:</label>
-                                <input type="text" id="finProyecto" name="finProyecto">
+                                <input type="text" id="finProyecto" name="finProyecto" value="<?php echo $data["fecha_final"]?>">
                             </div>
 
                             <h5>Profesor Tutor</h5>  
                                 <div>
                                 <label for="nombreTutor">Nombre tutor:</label>
-                                <input type="text" id="nombreTutor" name="nombreTutor">
+                                <input type="text" id="nombreTutor" name="nombreTutor" value="<?php echo $data["tutor"]?>">
                                 
                                 <label for="cedulaTutor">Cédula tutor:</label>
-                                <input type="text" id="cedulaTutor" name="cedulaTutor">
+                                <input type="text" id="cedulaTutor" name="cedulaTutor" value="<?php echo $data["tutor_cedula"]?>">
                                 </div>
                             
                             <h5>Comunidad Beneficiaria</h5>
 
                             <div>
                                 <label for="caracteristicasC">Caracteristicas de la comunidad/Entidad Benenficiaria:</label>
-                                <input type="text" id="caracteristicasC" name="caracteristicasC">
+                                <input type="text" id="caracteristicasC" name="caracteristicasC" value="<?php echo $data["comunidad_caracteristicas"]?>">
                                 <br>
                                 <label for="numeroBen">Número aproximado de beneficiarios:</label>
-                                <input type="text" id="numeroBen" name="numeroBen">
+                                <input type="text" id="numeroBen" name="numeroBen" value="<?php echo $data["no_beneficiarios"]?>">
                             </div>
 
                             <h5>Representante de la Comunidad</h5>
