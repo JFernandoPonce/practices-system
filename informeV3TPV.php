@@ -175,8 +175,13 @@ $data = $query_data->fetch_assoc();
                                 <input type="text" id="observacion" name="observacion">
                                 </div>
                                 <br>
-                                <div>
-                                <label for="duraciontotal">Duracion toal:</label>
+                    </form>
+                    </div>
+                </div>
+                <div><input type="button" value="Save" class="save" id="saveV31" ></div>
+                <div class="contentI">
+                <div>
+                                <label for="duraciontotal">Duracion total:</label>
                                 <input type="text" id="duraciontotal" name="duraciontotal">
                                 </div>
                                 <br>
@@ -189,8 +194,6 @@ $data = $query_data->fetch_assoc();
                                 <label for="recomendaciones">Recomendaciones</label>
                                 <input type="text" id="recomendaciones" name="recomendaciones">
                                 </div>
-                    </form>
-                    </div>
                 </div>
                 <input type="file" value="Generar Documento"  id="doc31" class="documentgen">
                 <button class="documentgen" onclick="generateDoc31();">Generar Documento</button>

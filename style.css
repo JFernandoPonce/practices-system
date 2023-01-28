@@ -653,7 +653,7 @@ form {
 }
 
 .addproyecto {
-    margin-left: 2rem;
+    margin: 2rem;
     padding: 1rem;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 800;
@@ -662,7 +662,7 @@ form {
 }
 .addproyectoPP {
     float: right;
-    margin-right: 3.7rem;
+    margin: 3.7rem;
     padding: 1rem;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 800;
@@ -761,4 +761,13 @@ section {
 #user-btn, #logout {
     height: 4rem;
     display: block;
+}
+
+.titulotabla {
+    display: flex;
+    justify-content: center;
+}
+.tablaProyectos {
+    margin: auto;
+    width: 75%;
 }
