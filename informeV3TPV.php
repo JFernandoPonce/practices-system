@@ -27,7 +27,7 @@ $data = $query_data->fetch_assoc();
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Raleway:wght@300;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
+<body class="comunidad">
     <div id="root">
         <div class="app">
             <div>
@@ -114,17 +114,32 @@ $data = $query_data->fetch_assoc();
                 </div>
 
                 <div class="botonesV3">
-                    <a href="#InformeV31"> 
-                        <button onclick="buttonV31()" class="dropbtn" id="informeV31">Informe V3.1</button> 
-                    </a>
+                        <div class="dropdown">
+                                <button onclick="dropInformes('muestraInformeV31');" class="dropbtn">Informe V3.1</button>
+                                    <div id="dropdownMuestraInformeV31" class="dropdown-content">
+                                      <a href="#InformeV31" onclick="botones('v31');" id="mesUnoV31">1er Mes</a>
+                                      <a href="#InformeV31" onclick="botones('v31');" id="mesDosV31">2do. Mes</a>
+                                      <a href="#InformeV31" onclick="botones('v31');" id="mesTresV31">3er Mes</a>
+                                    </div>
+                        </div> 
 
-                    <a href="#InformeV32">
-                        <button onclick="buttonV32()" class="dropbtn" id="informeV32">Informe V3.2</button>
-                    </a>
+                        <div class="dropdown">
+                                <button onclick="dropInformes('muestraInformeV32');" class="dropbtn">Informe V3.2</button>
+                                    <div id="dropdownMuestraInformeV32" class="dropdown-content">
+                                    <a href="#InformeV32" onclick="botones('v32');" id="mesUnoV32">1er Mes</a>
+                                      <a href="#InformeV32" onclick="botones('v32');" id="mesDosV32">2do. Mes</a>
+                                      <a href="#InformeV32" onclick="botones('v32');" id="mesTresV32">3er Mes</a>
+                                    </div>
+                        </div>
                     
-                    <a href="#InformeV33">
-                        <button onclick="buttonV33()" class="dropbtn" id="informeV33">Informe V3.3</button>
-                    </a>
+                        <div class="dropdown">
+                                <button onclick="dropInformes('muestraInformeV33');" class="dropbtn">Informe V3.3</button>
+                                    <div id="dropdownMuestraInformeV33" class="dropdown-content">
+                                    <a href="#InformeV33" onclick="botones('v33');" id="mesUnoV33">1er Mes</a>
+                                      <a href="#InformeV33" onclick="botones('v33');" id="mesDosV33">2do. Mes</a>
+                                      <a href="#InformeV33" onclick="botones('v33');" id="mesTresV33">3er Mes</a>
+                                    </div>
+                        </div>
                 </div>
             </section>
 
@@ -178,7 +193,9 @@ $data = $query_data->fetch_assoc();
                     </form>
                     </div>
                 </div>
-                <div><input type="button" value="Save" class="save" id="saveV31" ></div>
+                <div>
+                    <input type="button" id="agregar_actividades" value="Guardar Progreso" class="documentgen">
+                </div>
                 <div class="contentI">
                 <div>
                                 <label for="duraciontotal">Duracion total:</label>

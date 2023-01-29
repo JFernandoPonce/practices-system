@@ -528,7 +528,9 @@ form {
     margin-inline-start: 35em;
     margin-block-start: 1em;
     padding: 0.5em;
+    height: auto;
 }
+
 
 #ipp {
     height: 20rem;
@@ -558,6 +560,11 @@ form {
 }
 
 .botonesV3 {
+    margin-top: 1em;
+    margin-left: 27em;
+}
+
+.botonesV5 {
     margin-top: 1em;
     margin-left: 27em;
 }
@@ -770,4 +777,8 @@ section {
 .tablaProyectos {
     margin: auto;
     width: 75%;
+}
+
+.save {
+    margin-inline-start: 5em;
 }

@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Raleway:wght@300;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
+<body class="comunidad">
     <div id="root">
         <div class="app">
             <div>
@@ -100,7 +100,7 @@
                                 <label for="cedulaRC">Cédula:</label>
                                 <input type="text" id="cedulaRC" name="cedulaRC">
                             </div>
-                            <h5>Total de horas investidas</h5>
+                            <h5>Total de horas invertidas</h5>
                             <div>
                                 <label for="horasEmpleadas">Horas empleadas:</label>
                                 <input type="text" id="horasEmpleadas" name="horasEmpleadas">
@@ -110,26 +110,46 @@
                     </form>
                 </div>
 
-                <div class="botonesV3">
-                    <a href="#InformeV31"> 
-                        <button onclick="buttonV31()" class="dropbtn" id="informeV31">Informe V5.1</button> 
-                    </a>
+                <div class="botonesV5">
+                    <div class="dropdown">
+                        <button onclick="dropInformes('muestraInformeV51');" class="dropbtn">Informe V5.1</button>
+                            <div id="dropdownMuestraInformeV51" class="dropdown-content">
+                                <a href="#InformeV51" onclick="botones('v51');" id="mesUnoV51">1er Mes</a>
+                                <a href="#InformeV51" onclick="botones('v51');" id="mesDosV51">2do. Mes</a>
+                                <a href="#InformeV51" onclick="botones('v51');" id="mesTresV51">3er Mes</a>
+                            </div>
+                    </div> 
 
-                    <a href="#InformeV32">
-                        <button onclick="buttonV32()" class="dropbtn" id="informeV32">Informe V5.2</button>
-                    </a>
+                    <div class="dropdown">
+                        <button onclick="dropInformes('muestraInformeV52');" class="dropbtn">Informe V5.2</button>
+                            <div id="dropdownMuestraInformeV52" class="dropdown-content">
+                                <a href="#InformeV52" onclick="botones('v52');" id="mesUnoV52">1er Mes</a>
+                                <a href="#InformeV52" onclick="botones('v52');" id="mesDosV52">2do. Mes</a>
+                                <a href="#InformeV52" onclick="botones('v52');" id="mesTresV52">3er Mes</a>
+                            </div>
+                    </div>
                     
-                    <a href="#InformeV33">
-                        <button onclick="buttonV33()" class="dropbtn" id="informeV33">Informe V5.3</button>
-                    </a>
+                    <div class="dropdown">
+                        <button onclick="dropInformes('muestraInformeV53');" class="dropbtn">Informe V5.3</button>
+                            <div id="dropdownMuestraInformeV53" class="dropdown-content">
+                                <a href="#InformeV53" onclick="botones('v53');" id="mesUnoV53">1er Mes</a>
+                                <a href="#InformeV53" onclick="botones('v53');" id="mesDosV53">2do. Mes</a>
+                                <a href="#InformeV53" onclick="botones('v53');" id="mesTresV53">3er Mes</a>
+                            </div>
+                    </div>
 
-                    <a href="#InformeV34">
-                        <button onclick="buttonV34()" class="dropbtn" id="informeV34">Informe V5.4</button>
-                    </a>
+                    <div class="dropdown">
+                        <button onclick="dropInformes('muestraInformeV54');" class="dropbtn">Informe V5.4</button>
+                            <div id="dropdownMuestraInformeV54" class="dropdown-content">
+                                <a href="#InformeV54" onclick="botones('v54');" id="mesUnoV54">1er Mes</a>
+                                <a href="#InformeV54" onclick="botones('v54');" id="mesDosV54">2do. Mes</a>
+                                <a href="#InformeV54" onclick="botones('v54');" id="mesTresV54">3er Mes</a>
+                            </div>
+                    </div>
                 </div>
             </section>
 
-            <section class="InformeV3" id="InformeV31">
+            <section class="InformeV3" id="InformeV51">
                 <h1 class="heading">Llena la Información requerida <span>Informe V 5.1</span></h1>
                 
                 <div class="contentI">
@@ -201,7 +221,7 @@
                 <button onclick="generateDoc51();" class="documentgen">Generar Documento</button>
             </section>
 
-            <section class="InformeV3" id="InformeV32">
+            <section class="InformeV3" id="InformeV52">
                 <h1 class="heading">Llena la Información requerida <span>Informe V 5.2</span></h1>
 
                 <div class="contentI">
@@ -236,7 +256,7 @@
                 <button onclick="generateDoc52();" class="documentgen">Generar Documento</button>
             </section>
 
-            <section class="InformeV3" id="InformeV33">
+            <section class="InformeV3" id="InformeV53">
                 <h1 class="heading">Llena la Información requerida <span>Informe V 5.3</span></h1>
                 <div class="contentI">
                     <div class="formPP1">
@@ -268,7 +288,7 @@
                 <input type="file" value="Generar Documento"  id="doc53" class="documentgen">
                 <button onclick="generateDoc53();" class="documentgen">Generar Documento</button>
             </section>
-            <section class="InformeV3" id="InformeV34">
+            <section class="InformeV3" id="InformeV54">
                 <h1 class="heading">Llena la Información requerida <span>Informe V 5.4</span></h1>
                 <div class="contentI">
                     <div class="formPP1">

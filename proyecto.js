@@ -10,7 +10,18 @@ window.onclick = function(event) {
       }
     }
 };      /* unselect dropdown button when clicking on screen */
-
+/* window.onclick = function(event2) {
+    if (!event2.target.matches('.dropero')) {
+      var dropdowns2 = document.getElementsByClassName("InformeV3");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown2 = dropdowns2[i];
+        if (openDropdown2.classList.contains('elegido')) {
+          openDropdown2.classList.remove('elegido');
+        }
+      }
+    }
+}; */
 
 const username = document.forms['form']['username'];
 const password = document.forms['form']['password'];
@@ -42,7 +53,17 @@ function evaluateForm(){
     
 }
 
+function botones(vacio) {
+    if (vacio == "v31") {document.querySelector("#InformeV31").classList.toggle("elegido")}
+    if (vacio == "v32") {document.querySelector("#InformeV32").classList.toggle("elegido")}
+    if (vacio == "v33") {document.querySelector("#InformeV33").classList.toggle("elegido")}
+    if (vacio == "v51") {document.querySelector("#InformeV51").classList.toggle("elegido")}
+    if (vacio == "v52") {document.querySelector("#InformeV52").classList.toggle("elegido")}
+    if (vacio == "v53") {document.querySelector("#InformeV53").classList.toggle("elegido")}
+    if (vacio == "v54") {document.querySelector("#InformeV54").classList.toggle("elegido")}
 
+
+}
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
@@ -64,16 +85,21 @@ function myFunction4() {
     document.getElementById("myDropdown4").classList.toggle("show");
 };
     
-function dropInformesAdmin(tipo){
+function dropInformes(tipo){
     if (tipo == "firmaspracticas") {document.getElementById("dropdownFirmasAdminPracticas").classList.toggle("show");}
     else if (tipo == "firmasvinculacion") {document.getElementById("dropdownFirmasAdminVinculacion").classList.toggle("show");}
     else if (tipo == 'descargarPracticas') {document.getElementById("dropdownDescargarInformeAdminPracticas").classList.toggle("show");}
     else if (tipo == 'descargarVinculacion') {document.getElementById("dropdownDescargarInformesAdminVinculacion").classList.toggle("show");}
+    else if (tipo == 'muestraInformeV31') {document.getElementById("dropdownMuestraInformeV31").classList.toggle("show");}
+    else if (tipo == 'muestraInformeV32') {document.getElementById("dropdownMuestraInformeV32").classList.toggle("show");}
+    else if (tipo == 'muestraInformeV33') {document.getElementById("dropdownMuestraInformeV33").classList.toggle("show");}
+    else if (tipo == 'muestraInformeV51') {document.getElementById("dropdownMuestraInformeV51").classList.toggle("show");}
+    else if (tipo == 'muestraInformeV52') {document.getElementById("dropdownMuestraInformeV52").classList.toggle("show");}
+    else if (tipo == 'muestraInformeV53') {document.getElementById("dropdownMuestraInformeV53").classList.toggle("show");}
+    else if (tipo == 'muestraInformeV54') {document.getElementById("dropdownMuestraInformeV54").classList.toggle("show");}
+
 };
 
-/* function dropInformesFirmasAdminPracticas(){
-    document.getElementById("dropdownFirmasAdminVinculacion").classList.toggle("show");
-}; */
 
 
 function buttonV31 () {
@@ -91,6 +117,8 @@ function buttonV33 () {
 function buttonV34 () {
     document.querySelector("#InformeV34").classList.toggle("elegido")
 };
+
+
 
 function closeFirmaV3(){
     document.querySelector(".uploadInformeV3").classList.remove("popup");
