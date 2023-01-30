@@ -93,7 +93,7 @@ $data = $query_data->fetch_assoc();
 
                             <div>
                                 <label for="nombreComunidad">Nombre de la comunidad benenficiaria:</label>
-                                <input type="text" id="nombreComunidad" name="nombreComunidad">
+                                <input type="text" id="nombreComunidad" name="nombreComunidad"  value="<?php echo $data["comunidad_beneficiaria"]?>">
                                 <br>
                                 <br>
                                 <label for="caracteristicasC">Caracteristicas de la comunidad/Entidad Benenficiaria:</label>
