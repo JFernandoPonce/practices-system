@@ -55,19 +55,19 @@ function evaluateForm(){
 
 function botones(vacio) {
     if (vacio == "v31") {document.querySelector("#InformeV31").classList.add("elegido")}
-    if (vacio == "v32") {document.querySelector("#InformeV32").classList.toggle("elegido")}
-    if (vacio == "v33") {document.querySelector("#InformeV33").classList.toggle("elegido")}
-    if (vacio == "v51") {document.querySelector("#InformeV51").classList.toggle("elegido")}
-    if (vacio == "v52") {document.querySelector("#InformeV52").classList.toggle("elegido")}
-    if (vacio == "v53") {document.querySelector("#InformeV53").classList.toggle("elegido")}
-    if (vacio == "v54") {document.querySelector("#InformeV54").classList.toggle("elegido")}
-    if (vacio == "p21") {document.querySelector("#InformeP21").classList.toggle("elegido")}
-    if (vacio == "p22") {document.querySelector("#InformeP22").classList.toggle("elegido")}
-    if (vacio == "p23") {document.querySelector("#InformeP23").classList.toggle("elegido")}
-    if (vacio == "p41") {document.querySelector("#InformeP41").classList.toggle("elegido")}
-    if (vacio == "p42") {document.querySelector("#InformeP42").classList.toggle("elegido")}
-    if (vacio == "p43") {document.querySelector("#InformeP43").classList.toggle("elegido")}
-    if (vacio == "p44") {document.querySelector("#InformeP44").classList.toggle("elegido")}
+    if (vacio == "v32") {document.querySelector("#InformeV32").classList.add("elegido")}
+    if (vacio == "v33") {document.querySelector("#InformeV33").classList.add("elegido")}
+    if (vacio == "v51") {document.querySelector("#InformeV51").classList.add("elegido")}
+    if (vacio == "v52") {document.querySelector("#InformeV52").classList.add("elegido")}
+    if (vacio == "v53") {document.querySelector("#InformeV53").classList.add("elegido")}
+    if (vacio == "v54") {document.querySelector("#InformeV54").classList.add("elegido")}
+    if (vacio == "p21") {document.querySelector("#InformeP21").classList.add("elegido")}
+    if (vacio == "p22") {document.querySelector("#InformeP22").classList.add("elegido")}
+    if (vacio == "p23") {document.querySelector("#InformeP23").classList.add("elegido")}
+    if (vacio == "p41") {document.querySelector("#InformeP41").classList.add("elegido")}
+    if (vacio == "p42") {document.querySelector("#InformeP42").classList.add("elegido")}
+    if (vacio == "p43") {document.querySelector("#InformeP43").classList.add("elegido")}
+    if (vacio == "p44") {document.querySelector("#InformeP44").classList.add("elegido")}
 }
 
 function myFunction() {
