@@ -36,7 +36,7 @@ $data = $query_data->fetch_assoc();
                         <img src="images/logo.png" alt="" id="logo">
                     </a>
                     <nav class="navbar">
-                        <h1 class="headerI">Crear Informe Tipo V <br> Practicas PreProfesionales</h1>
+                        <h1 class="headerI">Crear Informe Tipo V3 <br> Proyectos de Vinculacion</h1>
                     </nav>
                 </header>
             </div>
@@ -117,7 +117,9 @@ $data = $query_data->fetch_assoc();
 
                     </form>
                 </div>
-
+                <div>
+                    <button class="documentgen">Guardar Progreso</button>
+                </div>
                 <div class="botonesV3">
                         <div class="dropdown">
                                 <button onclick="dropInformes('muestraInformeV31');" class="dropbtn">Informe V3.1</button>
