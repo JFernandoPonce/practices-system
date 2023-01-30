@@ -54,15 +54,20 @@ function evaluateForm(){
 }
 
 function botones(vacio) {
-    if (vacio == "v31") {document.querySelector("#InformeV31").classList.toggle("elegido")}
+    if (vacio == "v31") {document.querySelector("#InformeV31").classList.add("elegido")}
     if (vacio == "v32") {document.querySelector("#InformeV32").classList.toggle("elegido")}
     if (vacio == "v33") {document.querySelector("#InformeV33").classList.toggle("elegido")}
     if (vacio == "v51") {document.querySelector("#InformeV51").classList.toggle("elegido")}
     if (vacio == "v52") {document.querySelector("#InformeV52").classList.toggle("elegido")}
     if (vacio == "v53") {document.querySelector("#InformeV53").classList.toggle("elegido")}
     if (vacio == "v54") {document.querySelector("#InformeV54").classList.toggle("elegido")}
-
-
+    if (vacio == "p21") {document.querySelector("#InformeP21").classList.toggle("elegido")}
+    if (vacio == "p22") {document.querySelector("#InformeP22").classList.toggle("elegido")}
+    if (vacio == "p23") {document.querySelector("#InformeP23").classList.toggle("elegido")}
+    if (vacio == "p41") {document.querySelector("#InformeP41").classList.toggle("elegido")}
+    if (vacio == "p42") {document.querySelector("#InformeP42").classList.toggle("elegido")}
+    if (vacio == "p43") {document.querySelector("#InformeP43").classList.toggle("elegido")}
+    if (vacio == "p44") {document.querySelector("#InformeP44").classList.toggle("elegido")}
 }
 
 function myFunction() {
@@ -97,10 +102,21 @@ function dropInformes(tipo){
     else if (tipo == 'muestraInformeV52') {document.getElementById("dropdownMuestraInformeV52").classList.toggle("show");}
     else if (tipo == 'muestraInformeV53') {document.getElementById("dropdownMuestraInformeV53").classList.toggle("show");}
     else if (tipo == 'muestraInformeV54') {document.getElementById("dropdownMuestraInformeV54").classList.toggle("show");}
+    else if (tipo == 'muestraInformeP21') {document.getElementById("dropdownMuestraInformeP21").classList.toggle("show");}
+    else if (tipo == 'muestraInformeP22') {document.getElementById("dropdownMuestraInformeP22").classList.toggle("show");}
+    else if (tipo == 'muestraInformeP23') {document.getElementById("dropdownMuestraInformeP23").classList.toggle("show");}
+    else if (tipo == 'muestraInformeP41') {document.getElementById("dropdownMuestraInformeP41").classList.toggle("show");}
+    else if (tipo == 'muestraInformeP42') {document.getElementById("dropdownMuestraInformeP42").classList.toggle("show");}
+    else if (tipo == 'muestraInformeP43') {document.getElementById("dropdownMuestraInformeP43").classList.toggle("show");}
+    else if (tipo == 'muestraInformeP44') {document.getElementById("dropdownMuestraInformeP44").classList.toggle("show");}
 
 };
 
+function prueba(){
+    dropInformes('muestraInformeV31');
+    botones('v31');
 
+}
 
 function buttonV31 () {
     document.querySelector("#InformeV31").classList.toggle("elegido")};
@@ -134,6 +150,10 @@ function closeFirmaV5(){
 function uploadFirmaV3(){
     document.querySelector(".uploadInformeV3").classList.add("popup");
 };
+
+function uploadInformes(firmas) {
+    if (firmas == "AnexosP4") {document.querySelector(".uploadAnexosP4").classList.add("popup");}
+}
 
 function descargarInformes(type){
     if (type == "InformeV3"){document.querySelector(".descargarInformeAdminV3").classList.add("popup");}

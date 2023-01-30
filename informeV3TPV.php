@@ -92,9 +92,13 @@ $data = $query_data->fetch_assoc();
                             <h5>Comunidad Beneficiaria</h5>
 
                             <div>
+                                <label for="nombreComunidad">Nombre de la comunidad benenficiaria:</label>
+                                <input type="text" id="nombreComunidad" name="nombreComunidad">
+                                <br>
+                                <br>
                                 <label for="caracteristicasC">Caracteristicas de la comunidad/Entidad Benenficiaria:</label>
                                 <input type="text" id="caracteristicasC" name="caracteristicasC" value="<?php echo $data["comunidad_caracteristicas"]?>">
-                                <br>
+                                <br><br>
                                 <label for="numeroBen">Número aproximado de beneficiarios:</label>
                                 <input type="text" id="numeroBen" name="numeroBen" value="<?php echo $data["no_beneficiarios"]?>">
                             </div>
@@ -104,6 +108,7 @@ $data = $query_data->fetch_assoc();
                             <div>
                                 <label for="nombreRC">Nombre representante de la comunidad:</label>
                                 <input type="text" id="nombreRC" name="nombreRC" value="<?php echo $data["representante_comunidad"]?>">
+                                <br>
                                 <br>
                                 <label for="cedulaRC">Cédula:</label>
                                 <input type="text" id="cedulaRC" name="cedulaRC" value="<?php echo $data["representante_cedula"]?>">

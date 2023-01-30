@@ -184,6 +184,19 @@ body {
     z-index: 1000;
 }
 
+.uploadAnexosP4 {
+    align-items: center;
+    background: rgba(240,240,240,0.8);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: -120%;
+    width: 100%;
+    z-index: 1000;
+}
+
 .descargarInformeAdminV3{
     align-items: center;
     background: rgba(240,240,240,0.8);
@@ -566,7 +579,17 @@ form {
 
 .botonesV5 {
     margin-top: 1em;
+    margin-left: 24em;
+}
+
+.botonesP2 {
+    margin-top: 1em;
     margin-left: 27em;
+}
+
+.botonesP4 {
+    margin-top: 1em;
+    margin-left: 24em;
 }
 
 .InformeV3 {

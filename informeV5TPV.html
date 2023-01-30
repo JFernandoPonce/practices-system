@@ -19,7 +19,7 @@
                         <img src="images/logo.png" alt="" id="logo">
                     </a>
                     <nav class="navbar">
-                        <h1 class="headerI">Crear Informe Tipo V5 <br> Practicas PreProfesionales</h1>
+                        <h1 class="headerI">Crear Informe Tipo V5 <br> Proyectos de Vinculación</h1>
                     </nav>
                 </header>
             </div>
@@ -80,17 +80,11 @@
                                 <label for="cedulaTutor">Cédula tutor:</label>
                                 <input type="text" id="cedulaTutor" name="cedulaTutor">
                                 </div>
-                            
-                            <h5>Alcance Territorial de las practicas</h5>
-
-                            <div>
-                                <label for="caracteristicasC">Caracteristicas de la comunidad/Entidad Benenficiaria:</label>
-                                <input type="text" id="caracteristicasC" name="caracteristicasC">
-                                <br>
-                                <label for="numeroBen">Número aproximado de beneficiarios:</label>
-                                <input type="text" id="numeroBen" name="numeroBen">
-                            </div>
-
+                            <h5>Comunidad Beneficiaria</h5>
+                                <div>
+                                    <label for="nombreComunidad">Nombre de la comunidad benenficiaria:</label>
+                                <input type="text" id="nombreComunidad" name="nombreComunidad">
+                                </div>
                             <h5>Representante de la Comunidad</h5>
 
                             <div>
@@ -100,12 +94,22 @@
                                 <label for="cedulaRC">Cédula:</label>
                                 <input type="text" id="cedulaRC" name="cedulaRC">
                             </div>
-                            <h5>Total de horas invertidas</h5>
-                            <div>
-                                <label for="horasEmpleadas">Horas empleadas:</label>
-                                <input type="text" id="horasEmpleadas" name="horasEmpleadas">
-                            </div>
+                            <h5>Periodo de Ejecucion de las Practicas</h5>
 
+                                <div>
+                                <label for="fechaInicioV5">Fecha de inicio</label>
+                                <input type="text" id="fechaInicioV5" name="fechaInicio51" placeholder="XX de ---- de XXXX">
+                                
+                                <label for="fechaFinalV5">Fecha de finalizcion</label>
+                                <input type="text" id="fechaFinalV5" name="fechaFinalV5" placeholder="XX de ---- de XXXX">
+                                
+                                </div>
+
+                            <h5>Total de horas invertidas</h5>
+                                <div>
+                                    <label for="horasEmpleadas">Horas invertidas por el Estudiante:</label>
+                                    <input type="number" id="horasEmpleadas" name="horasEmpleadas">
+                                </div>
 
                     </form>
                 </div>
@@ -155,16 +159,23 @@
                 <div class="contentI">
                     <div class="formPP1">
                         <form>
-                            <h3>Periodo que cubre el presente informe</h3>
+                            <h4>Alcance Territorial de las practicas</h4>
+                            <div>
+                                <label for="paisPracticas">País:</label>
+                                <input type="text" id="paisPracticas" name="paisPracticas">
+                                <label for="provinciaPracticas">Provincia:</label>
+                                <input type="text" id="provinciaPracticas" name="provinciaPracticas">
+                                <br>
+                                <br>
+                                <label for="caracteristicasC">Caracteristicas de la comunidad/Entidad Benenficiaria:</label>
+                                <input type="text" id="caracteristicasC" name="caracteristicasC">
+                                <br>
+                                <br>
+                                <label for="numeroBen">Número aproximado de beneficiarios:</label>
+                                <input type="text" id="numeroBen" name="numeroBen">
+                            </div>
 
-                                <div>
-                                <label for="fechaInicio51">Fecha de inicio</label>
-                                <input type="text" id="fechaInicio51" name="fechaInicio51" placeholder="XX de ---- de XXXX">
-                                
-                                <label for="fechaFinal51">Fecha de inicio</label>
-                                <input type="text" id="fechaFinal51" name="fechaFinal51" placeholder="XX de ---- de XXXX">
-                                
-                                </div>
+                            
                                 <br>    
                         </form>
                     </div>
@@ -198,6 +209,9 @@
                                 
                     </form>
                     </div>
+                </div>
+                <div>
+                    <input type="button" id="agregar_actividades" value="Guardar Progreso" class="documentgen">
                 </div>
                 <div class="contentI">
                     <div>

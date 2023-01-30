@@ -72,11 +72,11 @@ $preprofesionales = $query_vinc->fetch_assoc();
                                     <button onclick="myFunction()" class="dropbtn">Crear Informe</button>
                                     <div id="myDropdown" class="dropdown-content">
                                       <!-- <a href="informePP1.html" target="_blank">Informe PP1</a> -->
-                                      <a href="informeP2TPP.html" target="_blank">Informe V3</a>
-                                      <a href="informeP2TPP.html" target="_blank">Informe V5</a>
+                                      <a href="informeP2TPP.html" target="_blank">Informe Mesual P2</a>
+                                      <a href="informeP4TPP.html" target="_blank">Informe Final P4</a>
                                     </div>
                                 </div>
-                                <input type="button" value="Subir Anexos" 9 class="dropbtn">
+                                <input type="button" onclick="uploadInformes('AnexosP4');" value="Subir Anexos" class="dropbtn">
                                 
                                 <input type="button" value="Incompleto" class="dropbtn">
                             </div>
@@ -99,8 +99,8 @@ $preprofesionales = $query_vinc->fetch_assoc();
                                  <div class="dropdown">
                                     <button onclick="myFunction2()" class="dropbtn">Crear Informe</button>
                                     <div id="myDropdown2" class="dropdown-content">
-                                      <a href="informeV3TPV.php" target="_blank">Informe V3</a>
-                                      <a href="informeV5TPV.html" target="_blank">Informe V5</a>
+                                      <a href="informeV3TPV.php" target="_blank">Informe Mensual V3</a>
+                                      <a href="informeV5TPV.html" target="_blank">Informe Final V5</a>
                                     </div>
                                 </div> 
                                 <input type="button" value="Subir Anexos" class="dropbtn">
@@ -114,7 +114,20 @@ $preprofesionales = $query_vinc->fetch_assoc();
                 </div>
 
             </section>
-
+            <div class="uploadAnexosP4" id="uploadAnexosP4"> 
+                                    <div class="contentSF">
+                                    <div class="uploadFile">
+                                        <form>
+                                            <h3>Seleccione el <br> <br>INFORME DE SU PROYECTO DE VINCULACIÓN V5 <br> <br> Firmado</h3>
+                                            <input type="file" id="myFile" name="filename">
+                                            <br>
+                                            <br>
+                                            <input type="submit">
+                                            <div onclick="closeFirma();" class="close-btnSF">&times;</div>
+                                          </form>   
+                                    </div>                                        
+                                    </div>
+                                </div>
             <section class="footer">
                 <div class="share">
                     <a href="https://twitter.com/schoolyachay?lang=en" target="_blank" class="fab fa-brands fa-twitter">
