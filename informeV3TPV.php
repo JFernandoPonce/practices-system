@@ -133,9 +133,9 @@ $data = $query_data->fetch_assoc();
                         <div class="dropdown">
                                 <button onclick="dropInformes('muestraInformeV32');" class="dropbtn">Informe V3.2</button>
                                     <div id="dropdownMuestraInformeV32" class="dropdown-content">
-                                    <a href="#InformeV32" onclick="botones('v32');" id="mesUnoV32">1er Mes</a>
-                                      <a href="#InformeV32" onclick="botones('v32');" id="mesDosV32">2do. Mes</a>
-                                      <a href="#InformeV32" onclick="botones('v32');" id="mesTresV32">3er Mes</a>
+                                      <a href="#InformeV32" onclick="botones('v32'); getV32(1);" id="mesUnoV32">1er Mes</a>
+                                      <a href="#InformeV32" onclick="botones('v32'); getV32(2);" id="mesDosV32">2do. Mes</a>
+                                      <a href="#InformeV32" onclick="botones('v32');  getV32(3);" id="mesTresV32">3er Mes</a>
                                     </div>
                         </div>
                     
@@ -253,8 +253,8 @@ $data = $query_data->fetch_assoc();
                     <form action="">
                         <h3>Observaciones</h3>
                                 <div>
-                                <label for="observaciones">Observaciones</label>
-                                <input type="text" id="observaciones" name="observaciones">
+                                <label for="observaciones32">Observaciones</label>
+                                <input type="text" id="observaciones32" name="observaciones32">
                                 </div>
                                 <br>
                     </form>

@@ -224,12 +224,29 @@ function getV31(month){
     xhrGeneral.onreadystatechange = function(){
         if(xhrGeneral.readyState === 4 && xhrGeneral.status === 200){
             var data = JSON.parse(xhrGeneral.responseText);
-            console.log(data);
             fechaInicio31.value = data[month-1]["fecha_inicio"];
             fechaFinal31.value = data[month-1]["fecha_fin"];
             duraciontotal31.value = data[month-1]["duracion_total"];
             conclusiones31.value = data[month-1]["conclusiones"];
             recomendaciones31.value = data[month-1]["recomendaciones"];
+        }
+    };
+    xhrGeneral.send();
+}
+
+fechaInicio32 = document.getElementById("fechaInicio32");
+fechaFinal32 = document.getElementById("fechaFinal32");
+observaciones32 = document.getElementById("duraciontotal31");
+
+function getV32(month){
+    var xhrGeneral = new XMLHttpRequest();
+    xhrGeneral.open("GET", "php/getv32.php", true);
+    xhrGeneral.onreadystatechange = function(){
+        if(xhrGeneral.readyState === 4 && xhrGeneral.status === 200){
+            var data = JSON.parse(xhrGeneral.responseText);
+            fechaInicio32.value = data[month-1]["fecha_inicio"];
+            fechaFinal32.value = data[month-1]["fecha_final"];
+            observaciones32.value = data[month-1]["observaciones"];
         }
     };
     xhrGeneral.send();
