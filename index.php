@@ -34,6 +34,9 @@ if(isset($_POST['entrar'])){
             if($user_type == "comunidad"){
                 header("location:comunidad.html");
             }
+            if($user_type == "admin"){
+                header("location:Admin.html");
+            }
             else{
                 echo '<script>alert("Error en tipo de usuario")</script>';
             }

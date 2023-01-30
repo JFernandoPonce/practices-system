@@ -52,9 +52,9 @@ function generateDoc31(){
         const actvidad = document.getElementById("actividadRealizada").value;
         const duracionActividad = document.getElementById("duracionActividad").value;
         const observaciones = document.getElementById("observacion").value;
-        const duracionTotal = document.getElementById("duraciontotal").value;
-        const conclusiones = document.getElementById("conclusiones").value;
-        const recomendaciones = document.getElementById("recomendaciones").value;
+        const duracionTotal = document.getElementById("duraciontotal31").value;
+        const conclusiones = document.getElementById("conclusiones31").value;
+        const recomendaciones = document.getElementById("recomendaciones31").value;
 
         
 
@@ -138,7 +138,7 @@ function generateDoc32(){
         const idRC = document.getElementById("cedulaRC").value;
         const inicioDate = document.getElementById("fechaInicio32").value;
         const endDate = document.getElementById("fechaFinal32").value;
-        const observaciones = document.getElementById("observaciones").value;
+        const observaciones = document.getElementById("observaciones32").value;
 
         doc.render({
             name: name,
@@ -212,8 +212,8 @@ function generateDoc33(){
         const numeroBen = document.getElementById("numeroBen").value;
         const nombreRC = document.getElementById("nombreRC").value;
         const idRC = document.getElementById("cedulaRC").value;
-        const inicioDate = document.getElementById("fechaInicio32").value;
-        const endDate = document.getElementById("fechaFinal32").value;
+        const inicioDate = document.getElementById("fechaInicio33").value;
+        const endDate = document.getElementById("fechaFinal33").value;
         const observaciones = document.getElementById("observaciones").value;
 
         doc.render({
