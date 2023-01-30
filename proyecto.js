@@ -251,3 +251,21 @@ function getV32(month){
     };
     xhrGeneral.send();
 }
+
+fechaInicio33 = document.getElementById("fechaInicio33");
+fechaFinal33 = document.getElementById("fechaFinal33");
+observaciones33 = document.getElementById("duraciontotal33");
+
+function getV33(month){
+    var xhrGeneral = new XMLHttpRequest();
+    xhrGeneral.open("GET", "php/getv33.php", true);
+    xhrGeneral.onreadystatechange = function(){
+        if(xhrGeneral.readyState === 4 && xhrGeneral.status === 200){
+            var data = JSON.parse(xhrGeneral.responseText);
+            fechaInicio33.value = data[month-1]["fecha_inicio"];
+            fechaFinal33.value = data[month-1]["fecha_final"];
+            observaciones33.value = data[month-1]["observaciones"];
+        }
+    };
+    xhrGeneral.send();
+}
