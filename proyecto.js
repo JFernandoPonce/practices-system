@@ -70,6 +70,24 @@ function botones(vacio) {
     if (vacio == "p44") {document.querySelector("#InformeP44").classList.add("elegido")}
 }
 
+function closeInformes(que){
+    if (que == "v31") {document.querySelector("#InformeV31").classList.remove("elegido")}
+    if (que == "v32") {document.querySelector("#InformeV32").classList.remove("elegido")}
+    if (que == "v33") {document.querySelector("#InformeV33").classList.remove("elegido")}
+    if (que == "v51") {document.querySelector("#InformeV51").classList.remove("elegido")}
+    if (que == "v52") {document.querySelector("#InformeV52").classList.remove("elegido")}
+    if (que == "v53") {document.querySelector("#InformeV53").classList.remove("elegido")}
+    if (que == "v54") {document.querySelector("#InformeV54").classList.remove("elegido")}
+    if (que == "p21") {document.querySelector("#InformeP21").classList.remove("elegido")}
+    if (que == "p22") {document.querySelector("#InformeP22").classList.remove("elegido")}
+    if (que == "p23") {document.querySelector("#InformeP23").classList.remove("elegido")}
+    if (que == "p41") {document.querySelector("#InformeP41").classList.remove("elegido")}
+    if (que == "p42") {document.querySelector("#InformeP42").classList.remove("elegido")}
+    if (que == "p43") {document.querySelector("#InformeP43").classList.remove("elegido")}
+    if (que == "p44") {document.querySelector("#InformeP44").classList.remove("elegido")}
+
+}
+
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 };    /* dropdown button */

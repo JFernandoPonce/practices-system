@@ -145,6 +145,7 @@ body {
     border-radius: 15px;
     cursor: pointer;
 }
+
 .login-form {
     align-items: center;
     background: rgba(240,240,240,0.8);
@@ -330,6 +331,16 @@ form {
     padding: 0.9rem 3rem;
 }
 
+.dropbtn1 {
+    background-color: red;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
 .dropbtn {
     background-color: #1B798F;
     color: white;
@@ -339,6 +350,7 @@ form {
     cursor: pointer;
     margin-top: 1em;
 }
+
 
 .dropbtn:hover, .dropbtn:focus {
     background-color: #343044;
@@ -804,4 +816,8 @@ section {
 
 .save {
     margin-inline-start: 5em;
+}
+
+.botonCerrar {
+    margin: 10rem;
 }

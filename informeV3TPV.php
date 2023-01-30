@@ -21,7 +21,7 @@ $data = $query_data->fetch_assoc();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear Informe Tipo 1</title>
+    <title>Crear Informe Tipo V3: Proyectos de Vinculacion</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Raleway:wght@300;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -149,10 +149,13 @@ $data = $query_data->fetch_assoc();
             </section>
 
             <section class="InformeV3" id="InformeV31">
-                <h1 class="heading">Llena la Información requerida <span>Informe V 3.1</span></h1>
+                <h1 class="heading">Llena la Información requerida <span>Informe V 3.1</span>
+                <button onclick="closeInformes('v31');" class="dropbtn" >X</button>
+                </h1>
                 
                 <div class="contentI">
                     <div class="formPP1">
+                    
                         <form>
                             <h3>Periodo que cubre el presente informe</h3>
 
@@ -222,7 +225,9 @@ $data = $query_data->fetch_assoc();
             </section>
 
             <section class="InformeV3" id="InformeV32">
-                <h1 class="heading">Llena la Información requerida <span>Informe V 3.2</span></h1>
+                <h1 class="heading">Llena la Información requerida <span>Informe V 3.2</span>
+                <button onclick="closeInformes('v32');" class="dropbtn" >X</button>
+                </h1>
 
                 <div class="contentI">
                     <div class="formPP1">
@@ -257,7 +262,9 @@ $data = $query_data->fetch_assoc();
             </section>
 
             <section class="InformeV3" id="InformeV33">
-                <h1 class="heading">Llena la Información requerida <span>Informe V 3.3</span></h1>
+                <h1 class="heading">Llena la Información requerida <span>Informe V 3.3</span>
+                <button onclick="closeInformes('v33');" class="dropbtn" >X</button>
+                </h1>
                 <div class="contentI">
                     <div class="formPP1">
                         <form>
