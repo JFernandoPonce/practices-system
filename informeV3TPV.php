@@ -124,9 +124,9 @@ $data = $query_data->fetch_assoc();
                         <div class="dropdown">
                                 <button onclick="dropInformes('muestraInformeV31');" class="dropbtn">Informe V3.1</button>
                                     <div id="dropdownMuestraInformeV31" class="dropdown-content">
-                                      <a href="#InformeV31" onclick="botones('v31');" id="mesUnoV31">1er Mes</a>
-                                      <a href="#InformeV31" onclick="botones('v31');" id="mesDosV31">2do. Mes</a>
-                                      <a href="#InformeV31" onclick="botones('v31');" id="mesTresV31">3er Mes</a>
+                                      <a href="#InformeV31" onclick="botones('v31'); getV31(1);" id="mesUnoV31">1er Mes</a>
+                                      <a href="#InformeV31" onclick="botones('v31'); getV31(2);" id="mesDosV31">2do. Mes</a>
+                                      <a href="#InformeV31" onclick="botones('v31'); getV31(3);" id="mesTresV31">3er Mes</a>
                                     </div>
                         </div> 
 
@@ -208,18 +208,18 @@ $data = $query_data->fetch_assoc();
                 </div>
                 <div class="contentI">
                 <div>
-                                <label for="duraciontotal">Duracion total:</label>
-                                <input type="text" id="duraciontotal" name="duraciontotal">
+                                <label for="duraciontotal31">Duracion total:</label>
+                                <input type="text" id="duraciontotal31" name="duraciontotal31">
                                 </div>
                                 <br>
                                 <div>
-                                <label for="conclusiones">Conclusiones</label>
-                                <input type="text" id="conclusiones" name="conclusiones">
+                                <label for="conclusiones31">Conclusiones</label>
+                                <input type="text" id="conclusiones31" name="conclusiones31">
                                 </div>
                                 <br>
                                 <div>
-                                <label for="recomendaciones">Recomendaciones</label>
-                                <input type="text" id="recomendaciones" name="recomendaciones">
+                                <label for="recomendaciones31">Recomendaciones</label>
+                                <input type="text" id="recomendaciones31" name="recomendaciones31">
                                 </div>
                 </div>
                 <input type="file" value="Generar Documento"  id="doc31" class="documentgen">

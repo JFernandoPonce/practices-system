@@ -207,4 +207,30 @@ function duplicateForm() {
     let formClone = firstForm.cloneNode(true);
     formClone.id = `activity${forms.length}`;
     div.appendChild(formClone);
-  }
+}
+
+
+
+fechaInicio31 = document.getElementById("fechaInicio31");
+fechaFinal31 = document.getElementById("fechaFinal31");
+duraciontotal31 = document.getElementById("duraciontotal31");
+conclusiones31 = document.getElementById("conclusiones31");
+recomendaciones31 = document.getElementById("recomendaciones31");
+
+
+function getV31(month){
+    var xhrGeneral = new XMLHttpRequest();
+    xhrGeneral.open("GET", "php/getv31general.php", true);
+    xhrGeneral.onreadystatechange = function(){
+        if(xhrGeneral.readyState === 4 && xhrGeneral.status === 200){
+            var data = JSON.parse(xhrGeneral.responseText);
+            console.log(data);
+            fechaInicio31.value = data[month-1]["fecha_inicio"];
+            fechaFinal31.value = data[month-1]["fecha_fin"];
+            duraciontotal31.value = data[month-1]["duracion_total"];
+            conclusiones31.value = data[month-1]["conclusiones"];
+            recomendaciones31.value = data[month-1]["recomendaciones"];
+        }
+    };
+    xhrGeneral.send();
+}
